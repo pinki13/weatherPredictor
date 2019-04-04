@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Trip App" />
+    
+    <meta property="og:description" content="A responsive website site that pulls data from a third party API, https://OpenWeatherMap.com and https://Foursquare.com, to present search results in a useful way." />
+    <meta property="og:type" content="website" />
+   
+    <title>Trip App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Megrim|Montserrat:400,600|Raleway:400,700" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main role=main>
+        <div class="start-display" id="start-page">
+            <header class="row" role="banner">
+                <h1 class="logo">Trip App</h1>
+                <p class="api-info">Powered by OpenWeatherMap and Foursquare API</p>
+                <p>Plan your next trip by finding out the current weather and the best things to do in a new city!</p>
+            </header>
+
+            <form action="#" class="search-form row" id="search-query-form">
+                <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
+                <button type="submit" class="submit-button">Search</button>
+            </form>
+        </div>
+
+        <section class="weather row" id="weather-display">
+
+        </section>
+
+        
+
+        <section id="foursquare-results" class="row">
+
+        </section>
+
+        <footer class="footer">
+            <a href="https://github.com/pinki13" target="_blank"><img src="social-icons/github-icon-80.png" alt="github icon"></a>&nbsp;
+            <a href="https://www.linkedin.com/in/sanjika-kumari-264a4912a/" target="_blank"><img src="social-icons/linkedin-icon-80.png" alt="linkedin icon"></a>&nbsp;
+            <a href="mailto:ksanjika13@gmail.com"><img src="social-icons/mail-icon-80.png" alt="email icon"></a>
+            <p>Created by Sanjika Kumari</p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo&libraries=places&callback=activatePlacesSearch"></script>
+</body>
+
+</html>
